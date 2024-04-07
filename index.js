@@ -29,9 +29,9 @@ let userAnswer = await inquirer.prompt([
         name: "userAmount"
     },
 ]);
-let fromCurrency = currency[userAnswer.from];
-let toCurrency = currency[userAnswer.to];
+let fromCurrency = currency[userAnswer.from]; // exchange rate
+let toCurrency = currency[userAnswer.to]; // exchange rate
 let enteredAmount = userAnswer.userAmount;
 let baseCurrency = enteredAmount / fromCurrency;
-let convertedAmount = baseCurrency * toCurrency;
+let convertedAmount = baseCurrency * toCurrency; // base amount multiplied with to exchange rate
 console.log(`Your amount from ${userAnswer.from} to ${userAnswer.to} is ${convertedAmount}`);

@@ -1,5 +1,5 @@
 {
-  "name": "currency-converter",
+  "name": "0me5-currency-converter",
   "version": "1.0.0",
   "description": "A program where you can check your currency value in other currencies values.",
   "main": "index.js",
